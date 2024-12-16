@@ -1,0 +1,2 @@
+Log started at 2024-12-12T21-17-22-665Z
+2024-12-12T21:18:08.515Z - ERROR: Error: fetch failed Context: {"directusUrl":"http://localhost:8055","message":"Invalid token. Please try again.","operation":"getDirectusToken"}
