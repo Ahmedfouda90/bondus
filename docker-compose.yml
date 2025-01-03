@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  directus:
+    image: directus/directus:latest
+    container_name: directus_app
+    restart: always
+    ports:
+      - "8055:8055"
+    volumes:
+      - ./directus:/directus
+    env_file:
+      - .env
+    environment:
+      HOST: "0.0.0.0"
+      PORT: 8055
+      PUBLIC_URL: "http://209.38.218.19"
+      DB_CLIENT: "mysql"
+      DB_HOST: "127.0.0.1"
+      DB_PORT: 3306
+      DB_DATABASE: "weplay5"
+      DB_USER: "root"
+      DB_PASSWORD: "10Hager29111998#"
+      SECRET: "sHi5uk2KEjnGAjcUcR7ebzq2z41ABWzY"
+      CORS_ENABLED: "true"
+      CORS_ORIGIN: "true"
+      STORAGE_LOCAL_ROOT: "./uploads"
